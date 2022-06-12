@@ -36,7 +36,9 @@
         </ul>
       </footer>
       <div>
-        
+
+# Notes
+
 - How to make a grid gameboard with the nested data? Table?
 - How to smoothly transition views? Router or Animations? 
 - How to move between rounds? Jeopardy, Double Jeopardy, final Jeopardy
