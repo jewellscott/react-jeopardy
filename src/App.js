@@ -32,6 +32,7 @@ function App() {
             <p>Contestant 1</p>
             <p>Signature</p>
           </div>
+          {/* conditionally render the second half of the score card (empty, inc or wager) */}
           <div className="score-card score-inc">
             <p className="score">${oneScore}</p>
             <p>Contestant 1</p>
