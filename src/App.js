@@ -17,7 +17,6 @@ function App() {
     setWager(0);
   }
 
-
   return (
     <div className="App">
       <header>
@@ -28,20 +27,20 @@ function App() {
         </div>
         <div id="score-board">
           <div className="score-card">
-            <p className="score">${oneScore}</p>
+            <p className="score">${oneScore.toLocaleString('en')}</p>
             <p>Contestant 1</p>
             <p>Signature</p>
           </div>
           {/* conditionally render the second half of the score card (empty, inc or wager) */}
           <div className="score-card score-inc">
-            <p className="score">${oneScore}</p>
+            <p className="score">${oneScore.toLocaleString('en')}</p>
             <p>Contestant 1</p>
             <p>Signature</p>
             <button onClick={() => setOneScore(oneScore - parseInt(clueValue))}>- ${clueValue}</button>
             <button onClick={() => setOneScore(oneScore + parseInt(clueValue))}>+ ${clueValue}</button>
           </div>
           <div className="score-card score-wager">
-            <p className="score">${oneScore}</p>
+            <p className="score">${oneScore.toLocaleString('en')}</p>
             <p>Contestant 1</p>
             <p>Signature</p>
             <form onSubmit={handleSubmit}>
