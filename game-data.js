@@ -1,4 +1,4 @@
-{
+const gameData = {
   "game": 
   {
     "jeopardy": [
@@ -373,3 +373,5 @@
       }
   }
 }
+
+export default gameData
