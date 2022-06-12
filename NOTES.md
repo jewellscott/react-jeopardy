@@ -58,5 +58,5 @@ My mini projects have helped me make websites with React, but I don't know how t
     - Less data to consider
     - More like a webapp, less like a website
     - Better design because it's ripped straight from Jeopardy/not my own brain
-    - More considerate of UI, transitons, etc
+    - More considerate of UX, transitons, etc
     - Still considers user preferences (timer length, number of contestants, etc)
