@@ -38,6 +38,15 @@ function App() {
               {gameData.game.jeopardy[0].clues.map((value,k) => (
                 <tr key={k}>
                   {gameData.game.jeopardy.map((category, i) => (
+                    /*{  
+                      The magic happens here? 
+
+                      onClick -> a link that opens a generic clue component that passes the data (category, clue, and value), which passses that data to the scores component to update it and to the main app component to blank out that clue
+
+                      The clicked modal component opens a new component that is passed the "answer" data
+
+                      question - does the entire page have to refresh or can i have just this board change views, and let the scores operate on their own
+                    } */
                     <td className="card clue" key={k}>
                       ${category.clues[k].value}
                     </td>
