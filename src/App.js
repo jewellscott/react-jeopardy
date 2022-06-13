@@ -24,6 +24,29 @@ function App() {
       </header>
       <main>
         <div id="game-board">
+          <table>
+            <thead>
+              <tr>
+                {gameData.game.jeopardy.map((categories, i) => (
+                <th className="card category" key={i}>
+                  {categories.category}
+                 </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {gameData.game.jeopardy[0].clues.map((value,k) => (
+                <tr key={k}>
+                  {gameData.game.jeopardy.map((category, i) => (
+                    <td className="card clue" key={k}>
+                      ${category.clues[k].value}
+                    </td>
+              ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          
         </div>
         <div id="score-board">
           <div className="score-card">
